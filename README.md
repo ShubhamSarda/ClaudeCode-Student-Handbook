@@ -38,6 +38,10 @@
 28. [Claude Code Desktop](#28-claude-code-desktop)
 29. [Claude Code Web](#29-claude-code-web)
 
+**Additional Resources**
+- [Project Workflow (Git / GitHub)](#project-workflow-git--github)
+- [Fable 5 — Dark Mode for Splitmate](#fable-5--dark-mode-for-splitmate)
+
 ---
 
 ## 1. How Claude Code Works
@@ -6729,4 +6733,3 @@ Fable 5 holds the entire design token system in context while updating every com
 Opus 4.8 would handle most of this. But Fable 5 tends to be more thorough on the final pass — catching the edge cases (modals on mobile, loading states, empty state illustrations) that Opus sometimes misses on large multi-component changes.
 
 ---
-
