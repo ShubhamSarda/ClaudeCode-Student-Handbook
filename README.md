@@ -4546,15 +4546,13 @@ Subagent C — "Team Lunch" group:
 
 ### Monitoring Running Subagents
 
-While subagents are running, open Agent View in a **separate terminal** to see all sessions, their status, and which ones need your input:
+While subagents are running, watch the terminal output — you'll see multiple streams of activity happening simultaneously. To check how many subagents are active:
 
-```bash
-claude agents
+```
+/status
 ```
 
-Agent View opens full-screen showing every active session. You can watch them work in parallel, check status, or step in if one needs you — while your main Claude session keeps running in the first terminal.
-
-> **Note:** `claude agents` (terminal command) is different from `/agents` (slash command inside a session). `claude agents` opens Agent View. `/agents` just prints where your agent files are located.
+This shows the active subagent count inside your current session.
 
 ---
 
@@ -5048,19 +5046,10 @@ Claude delegates to the `database-reviewer` agent. It reads the relevant files, 
 
 **Monitor while it runs:**
 
-Open a second terminal and run:
-
-```bash
-claude agents
-```
-
-Agent View opens full-screen and shows the `database-reviewer` session updating in real time — files being read, checklist applied, report being written. Your main Claude session continues in the first terminal.
+Watch the terminal output — you'll see the agent reading files and processing. To check status:
 
 ```
-Terminal 1 (main session) Terminal 2
-────────────────────────── ──────────────────
-@database-reviewer review... claude agents
- → database-reviewer: running...
+/status
 ```
 
 ---
